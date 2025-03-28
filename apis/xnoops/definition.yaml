@@ -1,0 +1,39 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: xnoops.customer.upbound.io
+spec:
+  claimNames:
+    kind: NoOp
+    plural: noops
+  group: customer.upbound.io
+  names:
+    categories:
+    - crossplane
+    kind: XNoOp
+    plural: xnoops
+  versions:
+  - name: v1alpha1
+    referenceable: true
+    schema:
+      openAPIV3Schema:
+        description: NoOp is the Schema for the NoOp API.
+        properties:
+          spec:
+            description: NoOpSpec defines the desired state of NoOp.
+            properties:
+              parameters:
+                properties:
+                  ultimateAnswer:
+                    type: number
+                  ultimateQuestion:
+                    type: string
+                type: object
+            type: object
+          status:
+            description: NoOpStatus defines the observed state of NoOp.
+            type: object
+        required:
+        - spec
+        type: object
+    served: true
