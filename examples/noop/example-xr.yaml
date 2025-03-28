@@ -1,0 +1,12 @@
+apiVersion: customer.upbound.io/v1alpha1
+kind: XNoOp
+metadata:
+  name: example
+  namespace: default
+spec: 
+  compositionRef:
+    name: noops.customer.upbound.io
+  parameters:
+    ultimateQuestion: "What is the meaning of life, the universe, and everything?"
+    ultimateAnswer: 41
+    #ultimateAnswer: 42
