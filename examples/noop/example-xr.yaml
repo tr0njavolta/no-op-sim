@@ -8,5 +8,5 @@ spec:
     name: noops.customer.upbound.io
   parameters:
     ultimateAnswer: 42
-    #ultimateQuestion: "What is the meaning of life?"
-    ultimateQuestion: "What is the meaning of life, the universe, and everything?"
+    ultimateQuestion: "What is the meaning of life?"
+    #ultimateQuestion: "What is the meaning of life, the universe, and everything?"
