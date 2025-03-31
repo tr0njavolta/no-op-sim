@@ -1,6 +1,6 @@
 # Upbound Simulations
 
-This repository is the companion to the Upbound Simulations guide. Clone this
+This repository is the companion to the [Upbound Simulations guide](https://docs.upbound.io/operate/simulations/). Clone this
 repository and follow along to learn how to use this feature.
 
 ## What are Simulations?
